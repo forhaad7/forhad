@@ -44,7 +44,10 @@
     }
   
     .hero-content {
-      z-index: 1;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
     }
   
     .hero-title {
@@ -58,7 +61,8 @@
       color: wheat;
     }
     .hero .sitelink{
-      margin-top: 70px;
+      position: absolute;
+      display: flex;
     }
     .hero .sitelink a {
       
@@ -85,7 +89,11 @@
       background-color: #d7fcd7;
     }
 
-
+    .hero .sitelink{
+      bottom: 20px;
+      display: inline-block;
+      z-index: 3;
+    }
     .hero .myimg img{
       position: absolute;
       left: 0;
@@ -198,15 +206,19 @@
     .hero .sitelink{
       margin-top: 40px;
     }
-  
+    .hero .sitelink{
+      bottom: 20px;
+      display: inline-block;
+    }
     .hero .sitelink a button {
       justify-content: space-between;
-      margin: 0 10px 15px 10px;
+      display: inline-block;
+      margin: 0 5px 10px 5px;
       font-weight: 600;
       min-width: 150px;
     }
     .hero-button {
-      padding: 18px 16px;
+      padding: 10px 10px;
       font-size: 15px;
       border-radius: 4px;
      
@@ -224,28 +236,23 @@
       <h3 class="hero-subtitle">Welcome to My World</h3>
       <h1 class="hero-title">Forhad Hossain</h1>
       <h2 class="hero-subtitle">Discover Amazing Things Here</h2>
-      <div class="mylogo"><img src="myloogo.png" alt="My Logo"></div>
-      <div class="sitelink">
-      <h4>Click To Go Ahead</h4>
+      <div class="mylogo"><img src="myloogo.png" alt="My Logo"></div>   
+    </div>
+    <div class="sitelink">
       <a href="#"><button class="hero-button">Gprahics Design</button></a>     
       <a href="#"><button class="hero-button">Web Design</button></a>      
       <a href="https://forhaad7.github.io/portfolio/Todolist.html"><button class="hero-button">My Tools</button></a> 
       <a href="https://forhaad7.github.io/portfolio/"><button class="hero-button">About Me</button></a> 
-      </div>    
-    </div>
+      </div> 
     <div class="myimg"><img src="background1.png" alt="My Photo"></div>
 
 
     
 		<div class="social0">
 			<a class="tooltip" target="_blank" href="https://bd.linkedin.com/in/forhaad7"><span class="tooltiptext">Linkedin</span><i class="fab fa-linkedin-in"></i></a>
-
 			<a class="tooltip" target="_blank" href="https://www.behance.net/forhaad7"><span class="tooltiptext">Behance</span><i class="fab fa-behance"></i></a>
-
 			<a class="tooltip" target="_blank" href="https://www.instagram.com/forhaad7/"><span class="tooltiptext">Instagram</span><i class="fab fa-instagram"></i></a>
-
 			<a class="tooltip" target="_blank" href="https://twitter.com/forhaad7"><span class="tooltiptext">Twitter</span><i class="fab fa-twitter"></i></a>
-
 			<a class="tooltip" target="_blank" href="https://www.facebook.com/forhaad7/"><span class="tooltiptext">Facebook</span><i class="fab fa-facebook-f"></i></a>
 		</div>
 
