@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Advanced Hero Section</title>
+  <meta name="viewport" charset="UTF-8" content="width=device-width,initial-scale=1"/>
+
+  <title>Forhad</title>
+  <link rel="icon" type="image/x-icon" href="thamnail.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
   <style>
     body{
       padding: 0;
@@ -81,7 +90,7 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      opacity: .4;
+      opacity: .9;
     }
 
     .hero .hero-content .mylogo {
@@ -92,7 +101,125 @@
       width: 150px;
     }
 
+/* social link part start */
+    .social0 {
+	position: fixed;
+	right: 0;
+	top: 30%;
+	z-index: 1100;
+	animation: slidein 4s;
+}
 
+@keyframes slidein {
+	from {
+		margin-right: -100%;
+		width: 100%;
+	}
+
+	to {
+		margin-right: -3px;
+		width: 50px;
+	}
+}
+.social0 a {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #007bb5;
+	border-radius: 50%;
+	margin: 10px 5px;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	font-size: 13px;
+	background-color: #fff;
+	color: black;
+	text-align: center;
+	padding: 5px 7px;
+	border-radius: 6px;
+	right: 40px;
+	box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 999;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+.social0 a:nth-child(2) {
+	background: #1769ff;
+}
+
+.social0 a:nth-child(3){
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social0 a:nth-child(4) {
+	background: #55ACEE;
+}
+
+.social0 a:nth-child(5) {
+	background: #3B5998;
+}
+.social0 a:hover {
+	transform: scale(1.1);
+	transition: .1s;
+}
+
+
+/* =======responsiv part start =========== */
+
+@media only screen and (max-width: 600px) {
+  .hero .myimg img{
+      opacity: .3;
+    }
+
+
+    .hero-title {
+      font-size: 35px;
+      margin-bottom: 8px;
+    }
+  
+    .hero-subtitle {
+      font-size: 15px;
+    }
+    .hero .sitelink{
+      margin-top: 40px;
+    }
+  
+    .hero .sitelink a button {
+      justify-content: space-between;
+      margin: 0 10px 15px 10px;
+      font-weight: 600;
+      min-width: 150px;
+    }
+    .hero-button {
+  
+      padding: 18px 16px;
+      font-size: 15px;
+      border-radius: 4px;
+     
+    }
+
+    .hero-button:hover {
+    
+    }
+
+
+
+
+}
+/* =======responsiv part end =========== */
 
   </style>
 </head>
@@ -113,6 +240,22 @@
       </div>    
     </div>
     <div class="myimg"><img src="background1.png" alt="My Photo"></div>
+
+
+    
+		<div class="social0">
+			<a class="tooltip" target="_blank" href="https://bd.linkedin.com/in/forhaad7"><span class="tooltiptext">Linkedin</span><i class="fab fa-linkedin-in"></i></a>
+
+			<a class="tooltip" target="_blank" href="https://www.behance.net/forhaad7"><span class="tooltiptext">Behance</span><i class="fab fa-behance"></i></a>
+
+			<a class="tooltip" target="_blank" href="https://www.instagram.com/forhaad7/"><span class="tooltiptext">Instagram</span><i class="fab fa-instagram"></i></a>
+
+			<a class="tooltip" target="_blank" href="https://twitter.com/forhaad7"><span class="tooltiptext">Twitter</span><i class="fab fa-twitter"></i></a>
+
+			<a class="tooltip" target="_blank" href="https://www.facebook.com/forhaad7/"><span class="tooltiptext">Facebook</span><i class="fab fa-facebook-f"></i></a>
+		</div>
+
+		
   </section>
 </body>
 </html>
