@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced Hero Section</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6{
+      color: white;
+      margin: 0;
+      padding: 5px;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(70deg, rgba(9,101,11,1) 0%, rgba(6,133,8,1) 35%, rgba(0,255,85,1) 100%);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+  
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  
+    .hero-content {
+      z-index: 1;
+    }
+  
+    .hero-title {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+  
+    .hero-subtitle {
+      font-size: 20px;
+      margin-bottom: 0px;
+      color: wheat;
+    }
+    .hero .sitelink{
+      margin-top: 100px;
+    }
+    .hero .sitelink a {
+
+    }
+  
+    .hero .sitelink a button {
+      justify-content: space-between;
+      margin: 0 10px 15px 10px;
+      font-weight: 800;
+      min-width: 200px;
+    }
+    .hero-button {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: #d7fcd7;
+    }
+
+
+    .hero .myimg img{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      opacity: .4;
+
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h3 class="hero-subtitle">Welcome to My World</h3>
+      <h1 class="hero-title">Forhad Hossain</h1>
+      <h2 class="hero-subtitle">Discover Amazing Things Here</h2>
+      <div class="sitelink">
+      <h4>Click To Go Ahead</h4>
+      <a href="#"><button class="hero-button">Gprahics Design</button></a>     
+      <a href="#"><button class="hero-button">Web Design</button></a>      
+      <a href="https://forhaad7.github.io/portfolio/Todolist.html"><button class="hero-button">My Tools</button></a> 
+      <a href="https://forhaad7.github.io/portfolio/"><button class="hero-button">About Me</button></a> 
+      </div>    
+    </div>
+    <div class="myimg"><img src="background1.png" alt=""></div>
+  </section>
+</body>
+</html>
