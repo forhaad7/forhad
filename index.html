@@ -116,7 +116,21 @@
 
     .hero .hero-content .mylogo img{
       width: 150px;
+      animation: float 6s ease-in-out infinite;
     }
+
+
+    @keyframes float {
+  0% {
+    transform: translatey(0px) rotate(0deg);
+  }
+  50% {
+    transform: translatey(-20px) rotate(-5deg);
+  }
+  100% {
+    transform: translatey(0px) rotate(0deg);
+  }
+}
 
 /* social link part start */
     .social0 {
@@ -245,7 +259,7 @@
       <h3 class="hero-subtitle">Welcome to My World</h3>
       <h1 class="hero-title">Forhad Hossain</h1>
       <h2 class="hero-subtitle">Discover Amazing Things Here</h2>
-      <div class="mylogo"><img src="myloogo.png" alt="My Logo"></div>   
+      <div class="mylogo"><a href="#"><img src="myloogo.png" alt="My Logo"></a></div>   
     </div>
     <div class="sitelink">
       <a href="https://www.behance.net/forhaad7"><button class="hero-button">Gprahics Design</button></a>     
